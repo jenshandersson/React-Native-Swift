@@ -5,7 +5,7 @@ class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.title}>Hello Shout!</Text>
+        <Text style={styles.title}>Hello World!</Text>
       </View>
     );
   }

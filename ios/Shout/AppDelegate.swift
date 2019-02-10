@@ -11,7 +11,7 @@ class AppDelegate : UIResponder, UIApplicationDelegate {
         let initialProperties: [String: Any] = [:]
         
         // Use Firebase library to configure APIs
-        FirebaseApp.configure()
+        // FirebaseApp.configure()
         // Define the name of the initial module
         let moduleName = "Shout"
         // Define the url that will be used to find the entry file
