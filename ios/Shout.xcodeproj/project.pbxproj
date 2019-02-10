@@ -8,20 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		B4445413220DB83100BE8E7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4445412220DB83100BE8E7C /* AppDelegate.swift */; };
-		B4445415220DB83100BE8E7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4445414220DB83100BE8E7C /* ViewController.swift */; };
-		B4445418220DB83100BE8E7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4445416220DB83100BE8E7C /* Main.storyboard */; };
 		B444541A220DB83300BE8E7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4445419220DB83300BE8E7C /* Assets.xcassets */; };
-		B444541D220DB83300BE8E7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B444541B220DB83300BE8E7C /* LaunchScreen.storyboard */; };
+		DBB54ECC00BE2F096EE5BDB2 /* libPods-Shout.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B71C0CBAEDF7535B7F97E2E /* libPods-Shout.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B71C0CBAEDF7535B7F97E2E /* libPods-Shout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Shout.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77480720BBC8708A5FDD1BE2 /* Pods-Shout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shout.release.xcconfig"; path = "Target Support Files/Pods-Shout/Pods-Shout.release.xcconfig"; sourceTree = "<group>"; };
+		B4278D22220E12250067D1C2 /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
 		B444540F220DB83100BE8E7C /* Shout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4445412220DB83100BE8E7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B4445414220DB83100BE8E7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B4445417220DB83100BE8E7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B4445419220DB83300BE8E7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B444541C220DB83300BE8E7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B444541E220DB83300BE8E7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F29A97BF93D1E489279E77EC /* Pods-Shout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shout.debug.xcconfig"; path = "Target Support Files/Pods-Shout/Pods-Shout.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +28,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBB54ECC00BE2F096EE5BDB2 /* libPods-Shout.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		915923D85C25A8E5BC087ECB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F29A97BF93D1E489279E77EC /* Pods-Shout.debug.xcconfig */,
+				77480720BBC8708A5FDD1BE2 /* Pods-Shout.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		999BD2D7F6EB434CDCC41D84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B71C0CBAEDF7535B7F97E2E /* libPods-Shout.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B4445406220DB83100BE8E7C = {
 			isa = PBXGroup;
 			children = (
 				B4445411220DB83100BE8E7C /* Shout */,
 				B4445410220DB83100BE8E7C /* Products */,
+				915923D85C25A8E5BC087ECB /* Pods */,
+				999BD2D7F6EB434CDCC41D84 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,11 +74,9 @@
 			isa = PBXGroup;
 			children = (
 				B4445412220DB83100BE8E7C /* AppDelegate.swift */,
-				B4445414220DB83100BE8E7C /* ViewController.swift */,
-				B4445416220DB83100BE8E7C /* Main.storyboard */,
 				B4445419220DB83300BE8E7C /* Assets.xcassets */,
-				B444541B220DB83300BE8E7C /* LaunchScreen.storyboard */,
 				B444541E220DB83300BE8E7C /* Info.plist */,
+				B4278D22220E12250067D1C2 /* Bridge.h */,
 			);
 			path = Shout;
 			sourceTree = "<group>";
@@ -71,6 +88,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4445421220DB83300BE8E7C /* Build configuration list for PBXNativeTarget "Shout" */;
 			buildPhases = (
+				8A7BA7BDC4D44C34057D20E3 /* [CP] Check Pods Manifest.lock */,
 				B444540B220DB83100BE8E7C /* Sources */,
 				B444540C220DB83100BE8E7C /* Frameworks */,
 				B444540D220DB83100BE8E7C /* Resources */,
@@ -122,44 +140,47 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B444541D220DB83300BE8E7C /* LaunchScreen.storyboard in Resources */,
 				B444541A220DB83300BE8E7C /* Assets.xcassets in Resources */,
-				B4445418220DB83100BE8E7C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8A7BA7BDC4D44C34057D20E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Shout-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B444540B220DB83100BE8E7C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4445415220DB83100BE8E7C /* ViewController.swift in Sources */,
 				B4445413220DB83100BE8E7C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		B4445416220DB83100BE8E7C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B4445417220DB83100BE8E7C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B444541B220DB83300BE8E7C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B444541C220DB83300BE8E7C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B444541F220DB83300BE8E7C /* Debug */ = {
@@ -280,16 +301,20 @@
 		};
 		B4445422220DB83300BE8E7C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F29A97BF93D1E489279E77EC /* Pods-Shout.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Shout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jens.shout.Shout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Shout/Bridge.h;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -297,16 +322,20 @@
 		};
 		B4445423220DB83300BE8E7C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77480720BBC8708A5FDD1BE2 /* Pods-Shout.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Shout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jens.shout.Shout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Shout/Bridge.h;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
